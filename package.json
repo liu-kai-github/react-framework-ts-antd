@@ -46,7 +46,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
+    "build": "node scripts/build.js && node scripts/zip.js",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
@@ -54,6 +54,7 @@
     "@types/node": "^10.5.2",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
+    "archiver": "^2.1.1",
     "ts-import-plugin": "^1.5.4",
     "typescript": "^2.9.2"
   },
